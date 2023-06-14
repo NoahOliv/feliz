@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUITO IMPORTANTE</title>
+
+    <style>
+        body{
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            background: rgb(173, 97, 173);
+            width: 100vw;
+        }
+        .caixa1{
+            border: 4px solid black;
+            width: 300px;
+            height: 300px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            background:linear-gradient( pink, rgb(76, 143, 231)) 
+
+        }
+        .caixa2{
+            border: 4px solid black;
+            width: 300px;
+            height: 300px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            background:linear-gradient( pink, rgb(76, 143, 231)) 
+
+        }
+        .caixa3{
+            border: 4px solid black;
+            width: 300px;
+            height: 300px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            background:linear-gradient( pink, rgb(76, 143, 231)) 
+
+        }
+        button{
+            position: relative;
+            top: 40%;
+            left: 8%;
+            background: none;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa2">
+        <p><font size="4">Sim:
+            <p> Te dedico<br>
+                essa música.<br>
+            </p>
+            </font></p>
+
+</div>
+<div class="caixa1">
+    <p><font size="6">Você aceita ser feliz comigo para sempre?</font></p>
+       
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <div>
+                        <a class="button" href="https://youtu.be/JaS17E2QVq0" style="float: right; border:1px solid; padding: 11px 21px; vertical-align: middle; background:#000000; color:white;border-radius:6px; font-size: 20px; font-family:helvetica, serif;text-decoration:none;">Sim</a>
+                    </div>
+                </td>
+                <td>
+                    <div >
+                        <button onpointermove="mover()">
+                        <a class="button"  style="float: center; border:1px solid; padding: 11px 21px; vertical-align: middle; background:#000000; color:white;border-radius:6px; font-size: 20px; font-family:helvetica, serif;text-decoration:none;">Não</a>
+                        </button>   
+                    </div>
+                </td>       
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script>
+    let elemento = document.querySelector('button')
+    let x, y 
+    function mover() {
+        elemento.style.display= "none"
+        novaposicao()
+    }
+    function novaposicao(){
+    x = Math.floor(Math.random() * (700 -100) + 50)
+    y = Math.floor(Math.random() * (300 -20) + 50)
+    elemento.style.left = x + "px"
+    elemento.style.top = y + "px"
+    elemento.style.display = "block"
+}
+</script>
+
+<div class="caixa3">
+    <p><font size="5">Não:
+        <p>Clica pra vê<br/></p>
+    </font></p>
+</div>
+</body>
+</html>
